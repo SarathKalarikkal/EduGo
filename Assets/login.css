@@ -1,0 +1,37 @@
+body{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+ .labelName{
+    color: rgba(88, 88, 88, 0.74);
+    top: 8px;
+    left:15px;
+    transition: all 0.3s;
+} 
+a:hover{
+    color: blue;
+}
+#email:focus ~ .labelName, #pwd:focus ~ .labelName {
+    top:-13px;
+    letter-spacing: 1.5px;
+    padding:0 2px;
+    background:white;
+    font-size: 11px;
+    color: #377de6;
+}
+#email:valid ~ .labelName, #pwd:valid ~ .labelName {
+    top:-13px;
+    letter-spacing: 1.5px;
+    padding:0 2px;
+    background:linear-gradient(180deg, rgba(43,48,53,1) 61%, rgba(30,34,40,1) 85%);
+    font-size: 13px;
+    color:#198754;
+}
+.social{
+    cursor: pointer;
+}
+.social img{
+    opacity: 0.8;
+}

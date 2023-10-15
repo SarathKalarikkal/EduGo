@@ -1,0 +1,99 @@
+body{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #1a1aaf, #005cd7, #007ec7, #009998, #08af6d);
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0;
+}
+
+.white-logo {
+position: absolute;
+top: 15px;
+left: 20px;
+width: 100px;
+height: 80px;
+}
+
+.container {
+    background-color: #00030759;
+width: 90%; /* Adjust to your preference for responsiveness */
+max-width: 600px; /* Maximum width for larger screens */
+padding: 25px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+border: 1px solid white;
+border-radius: 8px;
+box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.37);
+}
+
+h1 {
+font-size: 24px;
+color: white;
+}
+
+p {
+font-size: 16px;
+color: white;
+}
+
+#chatbot {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+#user-input {
+width: 100%; /* Full-width input */
+max-width: 600px; /* Limit input width on larger screens */
+height: 50px;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+outline: none;
+transition: 0.3s ease;
+}
+
+#send-button {
+background: rgb(20, 143, 85);
+color: #FFF;
+padding: 10px 20px;
+border: 1px solid white;
+border-radius: 5px;
+cursor: pointer;
+width: 110%;
+}
+
+#send-button:hover {
+background-color: rgb(31, 158, 99);
+}
+
+#chatbot-response {
+text-align: center;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+width: 100%; 
+max-width: 600px; 
+color: white;
+}
+
+
+@media (max-width: 768px) {
+.container {
+  width: 80%;
+}
+#user-input{
+width: 90%;
+}
+#chatbot-response{
+    width: 90%;  
+}
+#send-button{
+    width: 100%;
+}
+
+}

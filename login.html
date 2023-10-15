@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="Assets/login.css">
+    <!-- ------Bootstrap------- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="vw-100 vw-sm-100 vh-100 d-flex justify-content-center align-items-center" style="position: relative;">
+    <div class="container d-flex justify-content-center align-items-center p-0  vh-75 border border-primary">
+        <div class="row shadow-lg w-100 h-100">
+            <div class="col-md-6 col-lg-6 col-xl-6 p-5 d-flex  justify-content-center align-items-start flex-column rounded-start-2" style="position: relative;background-color:rgb(26, 26, 175) ;">
+                <img src="Assets/Images/white-logo.png" class="h6 text-white position-absolute" style="z-index: 999999; left: 15px; top: 15px; width: 80px;" />
+                <div class="bg-primary w-100 h-100" style="opacity: 0.2; position: absolute; z-index: 99999; left: 0;"></div>
+                <p class="h1 text-white" style="z-index: 99999;">Welcome Back..!</p>
+                <p class="lead text-white" style="z-index: 99999;"> You'll have an all-access pass to enriching and entertaining material.</p>
+                <a href="index.html" style=" text-decoration: none;"><button type="button" class="btn btn-outline-light" style="z-index: 99999;">Explore</button></a>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-6 bg-body-tertiary p-5 d-flex justify-content-center align-items-center rounded-end-2 position-relative">
+                <div class="spinner-grow spinner-grow-sm text-primary position-absolute" style="top: 10px; right: 10px;"></div>
+                <form action="/" class="w-75">
+                    <div class="heading mb-5">
+                        <h2 class="text-center text-primary">Login</h2>
+                        <p class="lead text-center fw-light">Login and get full access</p>
+                    </div>
+                    <div class="mb-3 mt- w-100 position-relative">
+                        <input type="email" class="form-control" id="email" placeholder="" name="email" required>
+                        <label for="email" class="form-label labelName position-absolute" >Email address</label>
+                    </div>
+                    <div class="mb-3 w-100 position-relative">
+                        <input type="password" class="form-control" id="pwd" placeholder="" name="pswd" required>
+                        <label for="pwd" class="form-label  labelName position-absolute">Your Password</label>
+                    </div>
+                    <div class="form-check mb-3 w-100">
+                        <label class="form-check-label d-flex justify-content-between w-100">
+                            <div class="flex-grow-1">
+                                <input class="form-check-input" type="checkbox" name="remember" required>
+                                <p> Remember me</p>
+                            </div>
+                            <a class="link-opacity-100 fs- fw-lighter" href="#">Forgot password?</a></p>
+                        </label>
+                    </div>
+                    <div class="d-grid gap-2 col-12 mx-auto">
+                        <button class="btn btn-primary" type="button">Login</button>
+                        <p class="text-center mt-2 fs-6 fw-lighter">Don't have an account? <a class="link-opacity-100" href="signup.html">Sign up</a></p>
+                    </div>
+                    <div class="d-flex col-12 w-100 mt-5  justify-content-center text-secondary social">
+                        <img src="Assets/Images/Google-logo.png" alt="google" width="25px" height="25px">
+                        <p class="">Login with google</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
